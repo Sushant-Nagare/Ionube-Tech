@@ -1,0 +1,298 @@
+
+body{
+    /* background-size: cover; */
+    /* background-position: center; */
+    margin: 0px;
+    padding: 0px;
+    margin-right: 0px;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Nunito', sans-serif;
+    /* background-color: #6cd7ff; */
+    /* background: rgb(13,23,75); */
+    /* word-wrap: break-word; */
+    /* background: linear-gradient(120deg, rgba(13,23,75,1) 0%, rgba(8,8,128,1) 23%, rgba(5,91,163,1) 46%, rgba(5,118,184,1) 53%, rgba(5,155,211,1) 70%, rgba(5,180,215,1) 92%); */
+    /* background-image: url(https://wallpapercave.com/wp/wp4902427.jpg); */
+    /* height: 850px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    position: relative;
+    width: auto; */
+}
+a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+li {
+    list-style: none;
+}
+
+/*Início das configurações da header*/
+.header {
+    width: 100%;
+    height: 60px;
+    /* font-size: 150%; */
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    /* font-weight: bolder; */
+    background-color: #ffffff;
+}
+.brand {
+    width: auto;
+    height: 100%;
+    float: left;
+    font-size: 180%;
+    color: black;
+    font-weight: bolder;
+    margin: 3px 0px 0px 6%;
+    font-family: 'Nunito', sans-serif;
+}
+/*Início das configurações da Navigation*/
+.menu {
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0px 0px 0px 0%;
+    /* margin: 0; */
+    padding: 0;
+    font-size: larger;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.menu ul a {
+    width: 20%;
+    height: inherit;
+    /* font-weight: bolder; */
+    color: #000;
+    display: inline-block;
+}
+.menu ul a:hover {
+    background-color: #001f37;
+    color: #fff;
+
+}
+.menu ul a.active {
+    /* text-decoration: underline; */
+    background-color:#001f37;
+    color: rgb(255 255 255);
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+/*Início das configurações da Navigation com dispositivos < 768px*/
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+    	-webkit-transition: max-height 0.3s;
+    	-moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+    	transition: max-height 0.3s;
+        /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
+        /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
+    }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #3f95ff;
+        padding: 10px 0px 10px 5%;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+        /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}
+.main{
+    background: url(../Image/Contact1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    position: relative;
+    height: 400px;
+    z-index: -1;
+}
+.main_ {
+    width: 40%;
+    color: white;
+    padding: 5%;
+    position: absolute;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+}
+.main_ h1 {
+    text-align: center;
+    /* padding-right: 36%; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 300%;
+}
+.main_ p{
+    padding-left: 38px;
+    padding-right: 38px;
+    /* text-align: center; */
+    font-size: 130%;
+    margin: 43px;
+}
+.form {
+   
+    margin-left: auto;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+   
+} 
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.form_data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form_data .form_data_{
+    flex-basis: 47%;
+
+}
+.form_data_{
+    margin-bottom: 30px;
+}
+legend {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 6%;
+    text-align: center;
+}
+label{
+    font-size: larger;
+    margin-left: 1%;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #1a1818;
+    color: black;
+    background: transparent;
+    font-size: 15px;
+    border-width: 0 0 1px;
+}
+::placeholder{
+    color: white;
+}
+button{
+    font-size: larger;
+    padding: 10px 0;
+    color: black;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 100%;
+}
+.footer{
+    padding: 5px;
+    text-align: center;
+    background-color: #626262;
+    color: bisque;
+}
+#p{
+    display: inline-block;
+}
+a{
+    color: white;
+}
+@media screen and (max-width:768px) {
+    .main{
+    margin-top: 3%;
+    height: 130px;
+    width: auto;
+}
+.main_ {
+    width: auto;
+    padding-left:0px;
+    padding-right: 0px;
+    margin-top: 4%;
+}
+.main_ h1 {
+    font-size: 130%;
+    margin-top:0%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:2px;
+}
+.main_ p{
+    font-size: 40%;
+    margin-left: auto;
+    margin-top:3%;
+    width: 45%;
+    margin-right: auto;
+}
+    .form{
+        width: 100%;
+        max-width: 300px;
+    }
+   label{
+    font-size: 14px;
+    }
+    input, textarea{
+     width: 90%;
+     font-size: 10px;
+    }
+    button{
+    font-size: 14px;
+    width: 100%;
+}
+legend {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 6%;
+    text-align: center;
+}
+.footer{
+    padding: 5px;
+    font-size: 14px
+}
+#p{
+    display:inline;
+}
+}

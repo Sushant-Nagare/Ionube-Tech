@@ -1,0 +1,418 @@
+body{
+    /* background-size: cover; */
+    /* background-position: center; */
+    margin: 0px;
+    padding: 0px;
+    margin-right: 0px;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Nunito', sans-serif;
+    background-color: #ace8ff;
+    height: 821px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    position: relative;
+    width: auto;
+}
+a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+li {
+    list-style: none;
+}
+
+/*Início das configurações da header*/
+.header {
+    width: 100%;
+    height: 60px;
+    /* font-size: 150%; */
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    /* font-weight: bolder; */
+    background-color: #ffffff;
+}
+.brand {
+    width: auto;
+    height: 100%;
+    float: left;
+    font-size: 180%;
+    color: black;
+    font-weight: bolder;
+    margin: 3px 0px 0px 6%;
+    font-family: 'Nunito', sans-serif;
+}
+/*Início das configurações da Navigation*/
+.menu {
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0px 0px 0px 0%;
+    /* margin: 0; */
+    padding: 0;
+    font-size: larger;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.menu ul a {
+    width: 20%;
+    height: inherit;
+    /* font-weight: bolder; */
+    color: #000;
+    display: inline-block;
+}
+.menu ul a:hover {
+    background-color: black;
+    color: #fff;
+
+}
+.menu ul a.active {
+    /* text-decoration: underline; */
+    background-color: black;
+    color: rgb(255 255 255);
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+/*Início das configurações da Navigation com dispositivos < 768px*/
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+    	-webkit-transition: max-height 0.3s;
+    	-moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+    	transition: max-height 0.3s;
+        /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
+        /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
+    }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #3f95ff;
+        padding: 10px 0px 10px 5%;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+        /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}
+
+
+.main{
+    background: url(../Image/Robo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 838px;
+    z-index: -1;
+}
+.main h1{
+    font-size: xxx-large;
+    /* width: 37%; */
+    color: white;
+    left: 0px;
+    display: inline-block;
+    text-align: center;
+    /* z-index: -1; */
+    width: 37%;
+    margin-bottom: 0px;
+    margin-top: 8%;
+    font-size: 310%;
+}
+.main p{
+        font-size: 100%;
+        width: 37%;
+        color: white;
+        /* padding: 5%; */
+        padding-left: 9%;
+        position: fixed;
+        left: 0px;
+        display: block;
+        padding-top: 10%;
+        text-align: center;
+        /* z-index: -1; */
+        padding-top: 5px;
+        text-align: center;
+        /* z-index: -1; */
+        position: relative;
+        font-size: 140%;
+}
+
+.main img{
+    /* padding-left: 109px; */
+    padding-top: 50px;
+    display: inline-block;
+    width: 36%;
+}
+.hhh{
+    background-color: white;
+}
+.vision{
+    height: auto;
+    text-align: center;
+    background-color: white;
+    align-items: center;
+    margin-top:-13%;
+}
+.vision h1{
+    width: 60%;
+    left: auto;
+    margin-top: 3%;
+    right: auto;
+    display: inline-block;
+    position: relative;
+    font-size: 270%;
+}
+.vision p{
+    width: 60%;
+    left: auto;
+    margin-top: 0%;
+    right: auto;
+    display: inline-block;
+    font-size: large;
+    position: relative;
+}
+.value{
+    background-color: white;
+   max-width: 2200px;
+    margin-top: 0px;
+    padding-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+}
+.value h1{
+    padding-top: 5%;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 270%;
+}
+.values{
+    padding-top: 2%;
+    box-sizing: border-box;
+    height: auto;
+    /* position: absolute; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.values h2{
+    font-size: xxx-large;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.values p{
+    font-size: large;
+    width: 70%;
+    
+}
+.values_ img{
+    width: 81%;
+}
+#item-1{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 41%;
+    max-width: 1100px;
+    text-align: center;
+    width: 19%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(253, 253, 253);
+    margin: 15px;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    border-radius: 20%;
+    
+}
+#img-1{
+   
+    width: 34%;
+    display: flex;
+}
+#img-2{
+    width: 34%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1%;
+}
+#img-3{
+   
+    width: 34%;
+    display: flex;
+}
+#item-3{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 41%;
+    max-width: 1100px;
+    text-align: center;
+    width: 19%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(253, 253, 253);
+    margin: 15px;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+}
+.footer{
+    padding: 5px;
+    text-align: center;
+    background-color: #626262;
+    color: bisque;
+}
+#p{
+    display: inline-block;
+}
+a{
+    color: white;
+}
+
+
+@media  screen and (max-width:768px) {
+    .main{
+    height: 250px;
+}
+.main h1{
+    font-size: large;
+    padding: 5%;
+    padding-left: 10%;
+    width: 37%;
+    /* position: absolute; */
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    margin-top: 28px;
+}
+.main p{
+        font-size: 30%;
+        width: 38%;
+        left: 0px;
+        /* top: auto; */
+        padding-top: 0px;
+}
+.vision{
+    height: auto;
+    text-align: center;
+}
+.vision h1{
+    width: 50%;
+    left: auto;
+    margin-top: 3%;
+    right: auto;
+    font-size:150%;
+    margin-bottom:5px;
+}
+.vision p{
+    width: 90%;
+    left: auto;
+    margin-top: 0%;
+    right: auto;
+    display: inline-block;
+    position: relative;
+    font-size:60%
+}
+.values{
+   max-width: 1100px;
+    margin-top: 0px;
+    padding-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+}
+.value h1{
+    padding-top: 5%;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 150%;
+}
+.values{
+    padding-top: 2%;  
+}
+.values h2{
+    font-size: 80%;
+}
+.values p{
+    font-size: 60%;
+    width: 100%;
+    
+}
+.values_ img{
+    width: 100%;
+    height:fit-content;
+}
+#item-1{
+    max-width: 900px;
+    margin: 2px;
+    padding: 0px;
+    border-radius: 0%;
+}
+#img-1{
+    width:35%;
+}
+#img-2{
+    width: 35%;
+    padding-top:20px
+}
+#img-3{
+    width: 35%;
+    padding-top:25px
+}
+#item-3{
+    max-width: 900px;
+    margin: 9px;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0%;
+}
+.footer{
+    padding: 5px;
+    font-size: 10px
+}
+#p{
+    display:inline;
+}  
+}
